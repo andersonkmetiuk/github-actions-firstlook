@@ -14,7 +14,7 @@ on:
   # Allows you to run this workflow manually from the Actions tab
  # workflow_dispatch:
 env:
-  name: Universal #name that every job can have access
+  name: Universal Name #name that every job can have access
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
