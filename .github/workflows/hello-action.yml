@@ -6,7 +6,7 @@ name: Hello Actions
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    
+
   pull_request:
     types: [closed]
     #branches: [ "main" ]
@@ -32,7 +32,7 @@ jobs:
         run: |
           echo Hello, $name!
           echo Actor: ${{ github.actor }}
-          echo Committed By:: ${{ github.event.commits.author.username }}
+          echo Committed By:: ${{ github.event.commits.author.name }}
 
   dump: #Job3
     runs-on: ubuntu-latest
